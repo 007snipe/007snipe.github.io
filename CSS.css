@@ -1,10 +1,25 @@
 html {
 	font-family: arial;
-	letter-spacing: 2px;
+	height: 1900px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	min-width: 100%;
 }
 
 header {
 	width: 100%;
+	margin-top: 50px;
+}
+
+#headerBorder {
+	float: left;
+	height: 30px;
+	min-width: 100%;
+	background: linear-gradient(to right, black, #888888, #888888, black);
 }
 
 #peacefulSleepContainer {
@@ -14,13 +29,16 @@ header {
 }
 
 #peacefulSleep {
+	font-family: cursive;
 	position: absolute;
 	top: 100px;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
-	font-size: 100;
+	max-height: 250px;
+	max-width: 650px;
+	padding-top: 100px;
 }
+
 
 #cityNight {						/* Header picture */
 	height: 375px;
@@ -36,6 +54,7 @@ header {
 	min-width: 200px;
 	border-radius: 20px;
 	background-color: darkgrey;
+	letter-spacing: 2px;
 }
 
 .navBar a:hover {					/* Nav bar links when hovering over them */
@@ -57,7 +76,7 @@ header {
 	width: 100%;
 	padding: 30px 0 30px 0;
 	text-align: center;
-	background-color: #888888;
+	background: linear-gradient( to right, black, #888888, #888888, black);
 	height: 30px;
 
 }
@@ -65,12 +84,6 @@ header {
 .navBar a.active {
 	background-color: #444444;
 	color: #C0C0C0;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-
 }
 
 #headerFiller {
@@ -81,12 +94,21 @@ body {
 main {
 	margin: auto;
 	width: 55%;
-	height: 1850px;
+	min-height: 100%;
+}
+
+
+#privacyPolicyTitle  {
+	text-align: center;
+	font-size: 40;
+	font-weight: bold;
+	margin-top: 80px;
 }
 
 #privacyText {
 	line-height: 2;
 	font-size: 20;
+	margin-bottom: 100px;
 }
 
 #privacyPolicyLink {
@@ -100,14 +122,16 @@ main {
 	border-left: solid lightgrey 1px;
 	border-top: solid lightgrey 1px;
 	width: 60%;
-	height: 300px;
+	height: 350px;
 	text-align: center;
 	padding: 20px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 #About p {
 	text-align: left;
+	line-height: 40px;
+	font-size: 20;
 	padding: 0px;
 	margin: 0px;
 }
@@ -117,7 +141,7 @@ main {
 	border-left: solid lightgrey 1px;
 	border-top: solid lightgrey 1px;
 	width: 60%;
-	height: 300px;
+	height: 350px;
 	text-align: center;
 	padding: 20px;
 	float: right;
@@ -125,6 +149,8 @@ main {
 
 #How p {
 	text-align: left;
+	line-height: 40px;
+	font-size: 20;
 	padding: 0px;
 	margin: 0px;
 }
@@ -134,20 +160,32 @@ main {
 	border-left: solid lightgrey 1px;
 	border-top: solid lightgrey 1px;
 	width: 60%;
-	height: 300px;
+	height: 100%;
 	text-align: center;
-	padding: 20px;
-	margin-top: 340px;
+	padding: 20px 20px 40px 20px;
+	margin-bottom: 100px;
+	margin-top: 390px;
 }
 
 #Why p {
 	text-align: left;
+	line-height: 40px;
+	font-size: 20;
 	padding: 0px;
 	margin: 0px;
 }
 
-footer {
+/*
+#footerBar {
 	height: 50px;
 	background-color: black;
 	bottom: 0;
+	min-width: 100%;
 }
+
+footer {
+	min-width: 100%;
+	bottom: 0;
+}
+*/
+
